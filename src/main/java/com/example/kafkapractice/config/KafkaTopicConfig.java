@@ -14,4 +14,11 @@ public class KafkaTopicConfig {
                 .name("Second-Topic")
                 .build();
     }
+
+    @Bean
+    public NewTopic getLearningJsonTopic() {
+        return TopicBuilder
+                .name("Json-Topic")
+                .build();
+    }
 }
